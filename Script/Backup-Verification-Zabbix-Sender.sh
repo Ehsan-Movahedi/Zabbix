@@ -1,4 +1,4 @@
-'''
+```
 mysqldump zabbix > zabbix.sql
 JOBDONE=$(echo $?)
 if [ "$JOBDONE" -ne 0 ]; then
@@ -6,4 +6,4 @@ if [ "$JOBDONE" -ne 0 ]; then
 else
   zabbix_sender -z 192.168.4.11 -s "zbx" -k sender -o 0
 fi
-'''
+```
